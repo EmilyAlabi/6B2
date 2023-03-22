@@ -1,0 +1,22 @@
+section{
+    background: blue;
+    height: 70vh;
+    min-height: 70vh;
+    width: 50vw;
+    margin-left: 3rem;
+    margin-top: 5em;
+    margin-top: -3rem;
+
+    padding: 2em,2em,0,0;
+}
+
+section+section{
+    background-color: yellow;
+    margin: -30px;
+}
+aside{
+    width: 50vw;
+    height: 50vh;
+    background: linear-gradient(180deg, green 33%, white 33%, white 66%, green 66%);
+    background: linear-gradient();
+}
