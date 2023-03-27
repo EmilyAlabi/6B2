@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Web</title>
+
+    <style>
+        ul{
+            list-style-type: none;
+            background-color: brown;
+            display: flex;
+            justify-content: space-betwween;
+            align-items: center;
+            height: 150px;
+        }
+        li:nth-of-type(even){
+            color: blue;
+            align-self: flex-end;
+        }
+
+        li:first-of-type{
+            color: green;
+        }
+        ul :first-child{
+            color: khaki;
+        }
+        ul :nth-child(3n+1){
+            color: aqua;
+        }
+        ul :nth-child(odd){
+            color: khaki;
+        }
+        li:last-of-type{
+            color: hotpink;
+        }
+        li:nth-last-of-type(3){
+            color: mediumspringgreen;
+        }
+        li{
+            display:inline-block;
+            text-align: center;
+            width: 30%;
+            color: whitesmoke;
+            margin-bottom: 20px;
+            padding: 2em 0;
+        }
+
+        li:hover{
+            background-color: blueviolet;
+        }
+
+         main{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 200px);
+            gap: 20px 10px;
+            grid-template-areas: "a a b" "a a b" "a a b" "c d e" "f f f";
+         }
+
+        section, aside, footer{
+            background-color: blue;
+        }
+        section:nth-of-type(1){
+            grid-area: a;
+            background-color: blue;
+        }
+        section:nth-of-type(2){
+            grid-area: c;
+            background-color: aqua;
+        }
+        section:nth-of-type(3){
+            grid-area: d;
+            background-color: yellow;
+        }
+        section:nth-of-type(4){
+            grid-area: e;
+            background-color: brown;    
+        }
+        aside{
+            grid-area: b;
+            background-color: pink;
+        }
+        footer{
+            grid-area: f;
+            background-color: deepskyblue;
+        } 
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>home 1</li>
+                <li>home 2</li>
+                <li>home 3</li>
+                <li>home 4</li>
+                <li>home 5</li>
+                <li>home 6</li>
+                <li>home 7</li>
+            </ul>
+        </nav>
+    </header>  
+    <main>
+        <section>abcdef</section>
+        <section>abcdef</section>
+        <section>abcdef</section>
+        <section>abcdef</section>
+        <aside>
+            <article>ghijkl</article>
+            <article>ghijkl</article>
+            <article>ghijkl</article>
+        </aside>
+        <footer>Food</footer>
+    </main> 
+</body>
+</html>

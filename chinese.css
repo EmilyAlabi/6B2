@@ -1,0 +1,20 @@
+h2{
+    text-align: center; color: yellow;
+}
+section{
+    background: red;
+}
+
+section{
+    width: 50vw;
+    height: 50vh;
+    background-image: url(https://cdn.britannica.com/41/4041-004-D051B135/Flag-Vietnam.jpg), url(https://cdn.britannica.com/41/4041-004-D051B135/Flag-Vietnam.jpg), url(https://cdn.britannica.com/41/4041-004-D051B135/Flag-Vietnam.jpg), url(https://cdn.britannica.com/41/4041-004-D051B135/Flag-Vietnam.jpg);
+
+    background-size: contain;
+    background-repeat: round, repeat-x, repeat-y;
+    background-position: left center ;
+    
+    margin: auto;
+}
+
+

@@ -1,0 +1,27 @@
+ul{
+    list-style-type: none;
+}
+li{
+    background-color: pink ;
+    background: linear-gradient(45deg, pink 50%, purple 50% );
+
+    width: 30%;
+    border: 2em double;
+    margin-bottom: 25px;
+    padding: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    background-color: blueviolet;
+    border-bottom: double;
+}
+
+body{
+    background: url(https://images.unsplash.com/photo-1442323794357-25b2ec110967?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OXwyMzA0MDE1fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    text-align: left blue;
+}
