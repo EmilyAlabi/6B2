@@ -1,0 +1,110 @@
+nav ul{
+    background-color: purple;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    padding: 10px;
+}
+
+nav ul li:nth-of-type(n+1){
+    align-self: flex-start;
+}
+nav ul li:nth-of-type(n+3){
+    align-self: center;
+}
+nav ul li:nth-of-type(5){
+    align-self: center;
+}
+nav ul li:nth-of-type(n+6){
+    align-self: flex-end;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px 150px 150px 150px 150px 100px;
+    gap: 10px;
+    grid-template-areas: "a a a b"
+                        "a a a b"
+                        "d d d b"
+                        "d d d b"
+                        "d d d b"
+                        "c c c c";
+}
+
+main >:nth-child(1){
+    grid-area: a;
+}
+main >:nth-child(2){
+    grid-area: d;
+}
+main >:nth-child(3){
+    grid-area: b;
+}
+main >:nth-child(4){
+    grid-area: c;
+    background-color: deepskyblue;
+}
+
+main{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+main >*{
+    background-color: pink;
+}
+section:first-of-type{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 150px);
+    gap: 10px;
+}
+section:nth-of-type(2){
+    display: grid;
+    grid-area: d;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 150px);
+    gap: 10px;
+}
+
+section+section{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: 150px 150px 150px;
+    grid-template-areas: "a a a"
+                        "d d d"
+                        "d d d";
+    gap: 10px;
+}
+
+section + section :nth-child(1){
+    grid-area: a;
+}
+section + section :nth-child(2){
+    grid-area: d;
+}
+section + section :nth-child(6){
+    grid-area: c;
+}
+
+section +section >*{
+    background-color: darkslateblue;
+}
+
+aside:first-of-type{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 150px);
+    gap: 10px;
+}
+
+aside >*{
+    background-color: firebrick;
+}
+
+p{
+    padding: 40px;
+}
