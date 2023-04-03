@@ -1,0 +1,28 @@
+nav ul{
+    list-style-type: none;
+    background-color: purple;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    padding: 10px;
+}
+
+ul :first-child{
+    align-self: flex-start;
+}
+ul :nth-child(2){
+    align-self: flex-start;
+}
+ul :nth-child(n+3){
+    align-self: center;
+}
+ul :nth-child(n+6){
+    align-self: flex-end;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    grid-area: ;
+}
